@@ -1,4 +1,5 @@
 import React from "react";
+import "./Login.css";
 import { Button } from "@material-ui/core";
 // eslint-disable-next-line no-unused-vars
 import { auth, provider } from "./firebase";
@@ -10,12 +11,17 @@ function Login() {
   return (
     <div className="login">
       <div className="login__body">
-        <h1>Welcome to Omega Chat Room</h1>
-        <h2>Sign In with Google and chat with your friends!!!!</h2>
+        <div className="login__header">
+          <h1>ΦMEGA</h1>
+        </div>
+        <div className="header--fadeBottom" />
+        <Button type="submit" onClick={SignInWithGoogle}>
+          Sign In
+        </Button>
+        <div className="login__footer">
+          <h2>Sign In with Google and chat with your friends!!!!</h2>
+        </div>
       </div>
-      <Button type="submit" onClick={SignInWithGoogle}>
-        Sign In
-      </Button>
     </div>
   );
 }
