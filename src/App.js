@@ -3,8 +3,10 @@ import Login from "./Login";
 
 function App() {
   return (
-    <div className="App">
-      <Login />
+    <div className="app">
+      <div className="app__body">
+        <Login />
+      </div>
     </div>
   );
 }
